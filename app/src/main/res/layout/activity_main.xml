@@ -14,5 +14,49 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_gravity="center"
+        android:text="Firebase Basics"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your name"
+        android:id="@+id/name"
+        android:textSize="20sp"
+        android:lines="3"
+        android:gravity="top"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your secrets here"
+        android:id="@+id/editText"
+        android:textSize="20sp"
+        android:paddingBottom="30dp"
+        android:lines="3"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:onClick="save"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Whose secret to reveal?"
+        android:id="@+id/target"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REVEAL SECRET"
+        android:onClick="secret"/>
 </LinearLayout>
